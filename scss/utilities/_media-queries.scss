@@ -1,0 +1,205 @@
+@media screen and (max-width: 768px) {
+
+    header {
+
+        margin-bottom: 10px;
+        position: sticky;
+        top: 5px;
+        z-index: 100;
+        background-color: #545454;
+        border: solid 1px transparent;
+        border-radius: 30px;
+        margin: 30px;
+        margin-top: 5px;
+        opacity: 0.96;
+
+        nav {
+            .nav-bar {
+                @include flex-options(row, center, center, wrap);
+
+                li {
+                    .nav-bar-item {
+
+                        &:hover {
+                            border: solid 1px transparent;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        #sobre-mi {
+
+            padding: 0;
+
+            div.about-me-container {
+
+                margin: 0;
+
+                div.info-about-me {
+
+                    align-content: center;
+
+                    div.main-title {
+
+                        margin: 0;
+
+                        h1 {
+                            font-size: 8vh;
+                        }
+                    }
+
+                    div.img-mine {
+
+                        img {
+                            width: 110px;
+                        }
+                    }
+                }
+
+                div .icons-about-me {
+
+                    margin: 10px 0;
+                    align-content: center;
+
+                    li div.item {
+                        margin: 0 15px;
+
+                        &:hover {
+
+                            border: solid 1px #f8bb42;
+
+                            a,
+                            .icon {
+                                color: #f8bb42;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #personal {
+
+            padding: 0;
+
+            div.personal-title {
+
+                h3 {
+                    text-align: start;
+                }
+            }
+
+            div.personal-container {
+
+                @include flex-options(column-reverse, center, center, wrap);
+
+                div.paragraphs {
+
+                    p {
+
+                        font-size: 1rem;
+                        text-align: justify;
+                    }
+
+
+                }
+
+                div.personal-img {
+
+                    img {
+                        width: 30vh;
+                        transform: none;
+                    }
+                }
+            }
+        }
+
+        #experiencia {
+
+            padding: 0;
+
+            div.exp-title {
+
+                h3 {
+                    text-align: start;
+                }
+            }
+
+            div.exp-info {
+                @include flex-options(column, center, center, wrap);
+                align-content: center;
+                padding: 0 10px;
+
+                div.exp-info-title {
+
+                    align-self: start;
+                    padding: 0 10px;
+
+                    div h4 {
+                        font-size: 20px;
+                    }
+
+                    div h5 {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        #proyectos {
+
+            padding: 0;
+
+            div.pro-title {
+
+                h3 {
+                    text-align: start;
+                }
+            }
+
+            div.pro-data-container {
+
+                padding: 0 20px;
+                grid-template-areas: "img" "title" "hiper" "par";
+                align-content: center;
+                justify-content: center;
+
+                div.pro-data-title {
+
+                    grid-area: title;
+
+                    h4 {
+                        text-align: start;
+                    }
+                }
+
+                div.pro-img {
+
+                    transition: none;
+                    grid-area: img;
+                    padding: 0;
+
+                    &:hover {
+                        transform: none;
+                    }
+                }
+
+                ul.pro-hiper {
+
+                    grid-area: hiper;
+                    align-content: center;
+                    margin: 10px 0;
+                }
+
+                div.pro-paragraph {
+                    grid-area: par;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

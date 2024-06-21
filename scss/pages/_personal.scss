@@ -1,0 +1,52 @@
+main {
+    #personal {
+
+        padding: 15px 200px;
+
+        div.personal-title {
+
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+
+            h3 {
+                font-size: 5vh;
+            }
+
+        }
+
+        div.personal-container {
+
+            @include grid-options(1fr, 2fr 1fr);
+            align-items: center;
+            justify-items: center;
+
+            div.paragraphs {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                padding: 20px;
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                }
+            }
+    
+            div.personal-img {
+
+                grid-row: 1/2;
+                grid-column: 2/3;
+                border-radius: 20px;
+
+                img {
+                    width: 40vh;
+                    background-color: #7a2059;
+                    padding: 10px;
+                    transform: rotate(7deg);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

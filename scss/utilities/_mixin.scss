@@ -1,0 +1,13 @@
+@mixin flex-options ($flex-d, $justify-c, $align-i, $wrap) {
+    display: flex;
+    flex-direction: $flex-d;
+    justify-content: $justify-c;
+    align-items: $align-i;
+    flex-wrap: $wrap;
+}
+
+@mixin grid-options($t-row, $t-column) {
+    display: grid;
+    grid-template-rows: $t-row;
+    grid-template-columns: $t-column;
+}

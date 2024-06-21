@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+
+ul {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+html {
+    // color font
+    color: white;
+
+    // background 
+    background: linear-gradient(#700F4D, #f8bb42);
+
+    // fonts
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+
+}

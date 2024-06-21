@@ -1,0 +1,78 @@
+main {
+    #proyectos {
+
+        padding: 15px 200px;
+
+        div.pro-title {
+
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+
+            h3 {
+                font-size: 5vh;
+            }
+        }
+
+        div.pro-data-container {
+            display: grid;
+            grid-template-areas: "img title" "img par" "img hiper";
+            align-items: center;
+            justify-items: start;
+
+            div.pro-data-title {
+                h4 {
+                    grid-area: title;
+                    font-size: 3vh;
+                }
+            }
+
+            div.pro-paragraph {
+                grid-area: par;
+            }
+
+            div.pro-img {
+
+                grid-area: img;
+                padding: 20px;
+                transition: transform 0.5s ease-in-out 1ms;
+
+                &:hover {
+                    transform: scale(0.97, 0.97);
+                }
+
+                img {
+                    width: 400px;
+                    border-radius: 20px;
+                }
+            }
+
+            ul.pro-hiper {
+
+                grid-area: hiper;
+                align-self: start;
+                @include flex-options(row, center, center, wrap);
+
+                li {
+                    a {
+                        padding: 1px 10px;
+                        border: solid 1px white;
+                        border-radius: 20px;
+                        color: white;
+                        margin: 0 5px;
+
+                        &:hover {
+                            color: #700F4D;
+                            border: solid 1px #700F4D;
+                        }
+                    }
+
+                }
+                
+                
+              
+            }
+        }
+    }
+}
