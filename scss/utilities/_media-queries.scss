@@ -9,7 +9,8 @@
         background-color: #545454;
         border: solid 1px transparent;
         border-radius: 30px;
-        margin: 30px;
+        
+        margin: 10px;
         margin-top: 5px;
         opacity: 0.96;
 
@@ -19,6 +20,8 @@
 
                 li {
                     .nav-bar-item {
+
+                        margin: 0 8px;
 
                         &:hover {
                             border: solid 1px transparent;
@@ -48,7 +51,7 @@
                         margin: 0;
 
                         h1 {
-                            font-size: 8vh;
+                            font-size: 5vh;
                         }
                     }
 
@@ -58,15 +61,26 @@
                             width: 110px;
                         }
                     }
+
+                    div h2 {
+                        font-size: 2.5vh;
+                    }
+
+                    div h3 {
+                        font-size: 3vh;
+                    }
                 }
 
-                div .icons-about-me {
+                div ul.icons-about-me {
+
+                    flex-direction: column-reverse;
 
                     margin: 10px 0;
                     align-content: center;
 
                     li div.item {
-                        margin: 0 15px;
+                        margin: 5px;
+                        
 
                         &:hover {
 
@@ -102,7 +116,7 @@
                     p {
 
                         font-size: 1rem;
-                        text-align: justify;
+                        text-align: start;
                     }
 
 
@@ -147,6 +161,13 @@
                         font-size: 15px;
                     }
                 }
+
+                div.exp-info-data {
+
+                    p {
+                        text-align: start;
+                    }
+                }
             }
         }
 
@@ -183,6 +204,12 @@
                     grid-area: img;
                     padding: 0;
 
+                    img {
+                        width: 350px;
+                        justify-self: center;
+                    }
+
+
                     &:hover {
                         transform: none;
                     }
@@ -202,4 +229,41 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    header {
+
+        margin-bottom: 10px;
+        position: sticky;
+        top: 5px;
+        z-index: 100;
+        background-color: #545454;
+        border: solid 1px transparent;
+        border-radius: 30px;
+        
+        margin: 10px 100px;
+        margin-top: 5px;
+        opacity: 0.96;
+
+        nav {
+            .nav-bar {
+                @include flex-options(row, center, center, wrap);
+
+                li {
+                    .nav-bar-item {
+
+                        margin: 0 30px;
+
+                        &:hover {
+                            border: solid 1px transparent;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

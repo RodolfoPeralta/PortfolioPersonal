@@ -49,7 +49,7 @@ main {
             }
 
 
-            div .icons-about-me {
+            div ul.icons-about-me {
                 @include flex-options(row, center, center, wrap);
 
                 li div.item {
