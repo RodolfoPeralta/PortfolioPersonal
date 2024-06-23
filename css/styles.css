@@ -340,13 +340,12 @@ main #proyectos div.pro-data-container ul.pro-hiper li a:hover {
     width: 110px;
   }
   main #sobre-mi div.about-me-container div.info-about-me div h2 {
-    font-size: 2.5vh;
+    font-size: 2.8vh;
   }
   main #sobre-mi div.about-me-container div.info-about-me div h3 {
     font-size: 3vh;
   }
   main #sobre-mi div.about-me-container div ul.icons-about-me {
-    flex-direction: column-reverse;
     margin: 10px 0;
     align-content: center;
   }
@@ -470,11 +469,26 @@ main #proyectos div.pro-data-container ul.pro-hiper li a:hover {
     flex-wrap: wrap;
   }
   header nav .nav-bar li .nav-bar-item {
-    margin: 0 30px;
+    margin: 0 8px;
   }
   header nav .nav-bar li .nav-bar-item:hover {
     border: solid 1px transparent;
     opacity: 1;
+  }
+  main #sobre-mi {
+    padding: 0;
+  }
+  main #personal {
+    padding: 0;
+  }
+  main #personal div.personal-container div.personal-img img {
+    transform: none;
+  }
+  main #experiencia {
+    padding: 0;
+  }
+  main #proyectos {
+    padding: 0;
   }
 }
 
