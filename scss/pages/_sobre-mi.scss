@@ -30,7 +30,7 @@ main {
                     }
                 }
 
-                div h3 {
+                div h2 {
                     font-size: 5vh;
                 }
 
@@ -53,7 +53,7 @@ main {
                 @include flex-options(row, center, center, wrap);
 
                 li div.item {
-                    .icon {
+                    i.icon {
                         color: white;
                     }
 
@@ -70,7 +70,7 @@ main {
                         border: solid 1px #700F4D;
 
                         a,
-                        .icon {
+                        i.icon {
                             color: #700F4D;
                         }
                     }
